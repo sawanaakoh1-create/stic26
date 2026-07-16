@@ -28,27 +28,6 @@ export interface AfriVoiceResponse {
    * par le backend FastAPI. Priorité au fichier si présent.
    */
   audioUrl?: string;
-  /** Transcription détectée de la voix de l'utilisateur (ASR). */
-  transcription?: string;
-  /** Audio TTS en base64 (renvoyé par /api/voice + Hugging Face). */
-  audioBase64?: string | null;
-  /** MIME type de l'audio TTS (audio/flac, audio/wav, audio/mpeg…). */
-  audioMimeType?: string | null;
-  /** Intent racine choisi (utile côté client pour envoyer le previousIntent au tour suivant). */
-  intent?: string;
-  /** Source effective de la transcription : "mms", "whisper", "text-input" ou "none". */
-  asrSource?: "mms" | "whisper" | "text-input" | "none";
-  /** Métadonnées de debug renvoyées par /api/voice. */
-  meta?: {
-    asrPrimaryModel?: string;
-    asrFallbackModel?: string;
-    ttsModel?: string;
-    targetLanguage?: string;
-    asrOk?: boolean;
-    ttsOk?: boolean;
-    previousIntent?: string | null;
-    warnings?: string[];
-  };
 }
 
 export interface AfriVoiceRequest {
@@ -94,84 +73,6 @@ export async function requestVoiceResponse(
   } catch (error) {
     console.warn(
       "[AfriVoice] Backend indisponible, bascule sur la réponse mock.",
-      error
-    );
-    return pickMockResponse(turnIndex);
-  }
-}
-
-/**
- * Envoie un enregistrement audio (Blob depuis MediaRecorder) à la route
- * `/api/voice` locale, qui exécute le pipeline ASR → intent → TTS Mooré via
- * Hugging Face. En cas d'échec, retombe sur une réponse mock pour ne pas
- * casser l'expérience de démonstration.
- */
-export async function requestVoiceFromAudio(
-  audioBlob: Blob,
-  turnIndex = 0,
-  previousIntent?: string | null,
-  previousLanguage?: string | null
-): Promise<AfriVoiceResponse> {
-  try {
-    const formData = new FormData();
-    // On force un nom .wav pour aider HF (le type MIME est déjà audio/wav
-    // grâce à l'encoder côté client).
-    const filename = audioBlob.type.includes("wav") ? "recording.wav" : "recording.webm";
-    formData.append("audio", audioBlob, filename);
-    if (previousIntent) formData.append("previousIntent", previousIntent);
-    if (previousLanguage) formData.append("previousLanguage", previousLanguage);
-
-    const res = await fetch("/api/voice", {
-      method: "POST",
-      body: formData,
-      cache: "no-store",
-    });
-
-    if (!res.ok) {
-      throw new Error(`/api/voice HTTP ${res.status}`);
-    }
-
-    const data = (await res.json()) as AfriVoiceResponse;
-    return data;
-  } catch (error) {
-    console.warn(
-      "[AfriVoice] /api/voice indisponible, bascule sur la réponse mock.",
-      error
-    );
-    return pickMockResponse(turnIndex);
-  }
-}
-
-/**
- * Variante texte : utile pour tester le pipeline sans micro (Postman,
- * tests unitaires, ou champ de saisie de démo).
- */
-export async function requestVoiceFromText(
-  text: string,
-  turnIndex = 0,
-  previousIntent?: string | null,
-  previousLanguage?: string | null
-): Promise<AfriVoiceResponse> {
-  try {
-    const formData = new FormData();
-    formData.append("text", text);
-    if (previousIntent) formData.append("previousIntent", previousIntent);
-    if (previousLanguage) formData.append("previousLanguage", previousLanguage);
-
-    const res = await fetch("/api/voice", {
-      method: "POST",
-      body: formData,
-      cache: "no-store",
-    });
-
-    if (!res.ok) {
-      throw new Error(`/api/voice HTTP ${res.status}`);
-    }
-
-    return (await res.json()) as AfriVoiceResponse;
-  } catch (error) {
-    console.warn(
-      "[AfriVoice] /api/voice indisponible, bascule sur la réponse mock.",
       error
     );
     return pickMockResponse(turnIndex);

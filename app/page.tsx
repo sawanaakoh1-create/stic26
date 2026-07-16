@@ -1,8 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import VoiceInterface from "@/components/VoiceInterface";
-import VoiceHero from "@/components/VoiceHero";
-import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -10,37 +8,30 @@ export default function HomePage() {
       <Header />
 
       <main className="flex-1">
-        {/* HERO — deux colonnes */}
-        <section className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-10 px-5 pt-10 pb-6 sm:pt-14 md:grid-cols-[1.15fr_0.85fr] md:pt-20">
-          <div className="text-center md:text-left">
-            <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.18em] text-sky-100/90 sm:text-xs">
-              <span aria-hidden className="h-1 w-1 rounded-full bg-sky-300" />
-              Candidature STIC&apos;26 · Prototype MVP
-            </span>
+        {/* HERO */}
+        <section className="mx-auto w-full max-w-4xl px-5 pt-10 pb-6 text-center sm:pt-14 md:pt-20">
+          <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.18em] text-sky-100/90 sm:text-xs">
+            <span aria-hidden className="h-1 w-1 rounded-full bg-sky-300" />
+            Candidature STIC&apos;26 · Prototype MVP
+          </span>
 
-            <h1 className="text-balance text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl">
-              Votre <span className="text-gradient">voix</span>,
-              <br /> votre monde numérique.
-            </h1>
+          <h1 className="text-balance text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl">
+            Votre <span className="text-gradient">voix</span>,
+            <br /> votre monde numérique.
+          </h1>
 
-            <p className="mt-6 max-w-xl text-pretty text-sm leading-relaxed text-slate-200/80 sm:text-base md:text-lg md:mx-0 mx-auto">
-              AfriVoice AI est une infrastructure d&apos;IA vocale pour
-              l&apos;Afrique de l&apos;Ouest. Parlez dans votre langue —
-              l&apos;IA écoute, comprend et répond, à voix haute.
-            </p>
+          <p className="mx-auto mt-6 max-w-2xl text-pretty text-sm leading-relaxed text-slate-200/80 sm:text-base md:text-lg">
+            AfriVoice AI est une infrastructure d&apos;IA vocale pour
+            l&apos;Afrique de l&apos;Ouest. Parlez dans votre langue —
+            l&apos;IA écoute, comprend et répond, à voix haute.
+          </p>
 
-            <div className="mt-7 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[11px] uppercase tracking-[0.18em] text-sky-100/50 md:justify-start">
-              <span>Voice-first</span>
-              <span aria-hidden className="h-1 w-1 rounded-full bg-sky-100/30" />
-              <span>Multi-langues</span>
-              <span aria-hidden className="h-1 w-1 rounded-full bg-sky-100/30" />
-              <span>Inclusion numérique</span>
-            </div>
-          </div>
-
-          {/* Illustration SVG */}
-          <div className="relative mx-auto w-full max-w-sm md:max-w-none">
-            <VoiceHero className="animate-float-slow" />
+          <div className="mt-7 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[11px] uppercase tracking-[0.18em] text-sky-100/50">
+            <span>Voice-first</span>
+            <span aria-hidden className="h-1 w-1 rounded-full bg-sky-100/30" />
+            <span>Multi-langues</span>
+            <span aria-hidden className="h-1 w-1 rounded-full bg-sky-100/30" />
+            <span>Inclusion numérique</span>
           </div>
         </section>
 
@@ -98,36 +89,6 @@ export default function HomePage() {
                 </p>
               </div>
             ))}
-          </div>
-
-          {/* CTA VERS PAGES INTERNES */}
-          <div className="mt-12 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link
-              href="/solution"
-              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-br from-sky-300 to-sky-500 px-5 py-3 text-sm font-semibold text-navy-950 shadow-glow transition hover:scale-[1.02] active:scale-100"
-            >
-              Découvrir la solution
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.4"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-4 w-4"
-                aria-hidden
-              >
-                <path d="M5 12h14" />
-                <path d="M13 5l7 7-7 7" />
-              </svg>
-            </Link>
-            <Link
-              href="/technologie"
-              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-sky-400/40 hover:bg-white/5"
-            >
-              Voir la technologie
-            </Link>
           </div>
         </section>
       </main>
