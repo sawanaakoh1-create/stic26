@@ -1,6 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import VoiceInterface from "@/components/VoiceInterface";
+import ImpactStats from "@/components/ImpactStats";
+import FounderSection from "@/components/FounderSection";
 
 export default function HomePage() {
   return (
@@ -91,6 +93,12 @@ export default function HomePage() {
             ))}
           </div>
         </section>
+
+        {/* IMPACT — chiffres animés */}
+        <ImpactStats />
+
+        {/* FONDATRICE */}
+        <FounderSection />
       </main>
 
       <Footer />

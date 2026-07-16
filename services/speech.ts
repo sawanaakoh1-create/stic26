@@ -11,6 +11,13 @@ export interface SpeakOptions {
   pitch?: number;
   onStart?: () => void;
   onEnd?: () => void;
+  /**
+   * Appelé à chaque frontière de mot pendant la lecture TTS.
+   * Utilisé pour piloter le sous-titre karaoké (mise en surbrillance
+   * synchrone du mot en cours). Certains navigateurs ne l'émettent pas
+   * (Firefox partiel) — dans ce cas la surbrillance est simplement absente.
+   */
+  onBoundary?: (charIndex: number) => void;
 }
 
 export function isSpeechSynthesisSupported(): boolean {
@@ -24,6 +31,7 @@ export function speak({
   pitch = 1,
   onStart,
   onEnd,
+  onBoundary,
 }: SpeakOptions): void {
   if (!isSpeechSynthesisSupported()) {
     onEnd?.();
@@ -48,6 +56,13 @@ export function speak({
   utterance.onstart = () => onStart?.();
   utterance.onend = () => onEnd?.();
   utterance.onerror = () => onEnd?.();
+  if (onBoundary) {
+    utterance.onboundary = (event) => {
+      // On ne s'intéresse qu'aux frontières de mot ; on ignore les phonèmes.
+      if (event.name && event.name !== "word") return;
+      onBoundary(event.charIndex);
+    };
+  }
 
   window.speechSynthesis.speak(utterance);
 }

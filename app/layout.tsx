@@ -9,6 +9,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ??
+      (process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : "http://localhost:3000")
+  ),
   title: "AfriVoice AI — Votre voix, votre monde numérique",
   description:
     "AfriVoice AI est une infrastructure linguistique d'IA générative qui permet aux populations d'Afrique de l'Ouest d'interagir avec le numérique dans leurs langues locales.",
@@ -21,14 +27,27 @@ export const metadata: Metadata = {
     "ASR",
     "TTS",
     "NLP",
+    "Wolof",
+    "Bambara",
+    "Peul",
+    "Mooré",
   ],
   authors: [{ name: "AKOH N'DJARMA M. Sawanatou" }],
+  creator: "AKOH N'DJARMA M. Sawanatou",
   openGraph: {
     title: "AfriVoice AI — Votre voix, votre monde numérique",
     description:
-      "Assistant vocal IA pour l'inclusion numérique en Afrique de l'Ouest.",
+      "Assistant vocal IA pour l'inclusion numérique en Afrique de l'Ouest. Wolof · Bambara · Peul · Mooré.",
     type: "website",
     locale: "fr_FR",
+    siteName: "AfriVoice AI",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AfriVoice AI — Votre voix, votre monde numérique",
+    description:
+      "Assistant vocal IA pour l'inclusion numérique en Afrique de l'Ouest.",
+    creator: "@afrivoiceai",
   },
 };
 
