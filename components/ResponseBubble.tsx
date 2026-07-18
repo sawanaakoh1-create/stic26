@@ -1,13 +1,13 @@
 "use client";
 
 import { useMemo } from "react";
-import type { DemoTurn } from "@/services/demoScenarios";
+import type { ScenarioTurn } from "@/services/demoScenarios";
 
 /** Étape courante d'un tour joué à l'écran. */
 export type TurnPhase = "user-listening" | "user-typed" | "ai-thinking" | "ai-answered";
 
 interface ConversationBubbleProps {
-  turn: DemoTurn;
+  turn: ScenarioTurn;
   phase: TurnPhase;
   /** Indique si la voix française du navigateur lit actuellement la réponse. */
   isSpeaking: boolean;

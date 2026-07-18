@@ -38,14 +38,18 @@ export default function HomePage() {
         </section>
 
         {/* VOICE INTERFACE */}
-        <section className="mx-auto w-full max-w-3xl px-3 pb-14 sm:px-4 sm:pb-24">
+        <section
+          id="demo"
+          className="mx-auto w-full max-w-3xl scroll-mt-24 px-3 pb-14 sm:px-4 sm:pb-24"
+        >
           <VoiceInterface />
         </section>
 
         {/* PILLARS */}
         <section
+          id="architecture"
           aria-label="Piliers technologiques"
-          className="mx-auto w-full max-w-6xl px-5 pb-16 sm:pb-20"
+          className="mx-auto w-full max-w-6xl scroll-mt-24 px-5 pb-16 sm:pb-20"
         >
           <div className="mb-6 flex flex-col items-center text-center sm:mb-8">
             <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-sky-300/90 sm:text-[11px] sm:tracking-[0.18em]">
@@ -95,10 +99,14 @@ export default function HomePage() {
         </section>
 
         {/* IMPACT — chiffres animés */}
-        <ImpactStats />
+        <div id="impact" className="scroll-mt-24">
+          <ImpactStats />
+        </div>
 
         {/* FONDATRICE */}
-        <FounderSection />
+        <div id="equipe" className="scroll-mt-24">
+          <FounderSection />
+        </div>
       </main>
 
       <Footer />
