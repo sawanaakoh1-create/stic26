@@ -37,74 +37,19 @@ export interface DemoTurn {
 }
 
 /**
- * Corpus scénarisé de la démonstration STIC'26.
- * Quatre langues d'Afrique de l'Ouest × quatre cas d'usage à fort impact
- * social : agriculture, santé, agriculture, inclusion financière.
+ * Corpus scénarisé de la démonstration STIC'26 — PHASE 1 : MOORÉ.
+ *
+ * Le MVP se concentre volontairement sur une seule langue — le Mooré,
+ * parlée par ~8 millions de personnes au Burkina Faso — pour prouver
+ * la profondeur sectorielle de la solution avant l'extension multilingue.
+ *
+ * Quatre personas incarnent quatre cas d'usage à fort impact social :
+ *   1. Salif    · Ouagadougou    · Inclusion financière (mobile money)
+ *   2. Rasmane  · Koudougou      · Agriculture pluviale
+ *   3. Awa      · Kaya           · Santé maternelle & infantile
+ *   4. Fatimata · Bobo-Dioulasso · Éducation & démarches administratives
  */
 export const DEMO_TURNS: DemoTurn[] = [
-  {
-    id: "wolof-agri",
-    persona: {
-      name: "Aïcha",
-      role: "Cultivatrice d'arachide",
-      location: "Kaolack, Sénégal",
-      initials: "AD",
-    },
-    languageCode: "wo",
-    languageLabel: "Wolof",
-    sector: "Agriculture",
-    userLocalText:
-      "Sama gerte gi, kañ laa ko war a jaay ci marché bi ngir am njëg bu baax?",
-    userFrenchText:
-      "Mon arachide, quand dois-je la vendre au marché pour obtenir un bon prix ?",
-    aiLocalText:
-      "Ndëpp mi, bëgg naa la wax : jaay sa gerte bi ci diggante ëllëg ak ëllëg-jotti, ndax njëg gi jog na ci béréb bi.",
-    aiFrenchText:
-      "Bonne nouvelle Aïcha : vends ton arachide entre demain et après-demain, les prix ont augmenté de 12 % sur le marché régional.",
-    ttsLangHint: "fr-FR",
-  },
-  {
-    id: "bambara-sante",
-    persona: {
-      name: "Fanta",
-      role: "Mère de famille",
-      location: "Ségou, Mali",
-      initials: "FT",
-    },
-    languageCode: "bm",
-    languageLabel: "Bambara",
-    sector: "Santé maternelle",
-    userLocalText:
-      "N ka den bɛ farigan sɔrɔ kabini kunun sufɛ, n ka mun kɛ sisan?",
-    userFrenchText:
-      "Mon enfant a de la fièvre depuis hier soir, que dois-je faire maintenant ?",
-    aiLocalText:
-      "N'i den bɛ farigan sɔrɔ, i k'a min ji caman, ka a lasu ni finiw, ka taa dɔgɔtɔrɔso la ni farigan ma ban tile fila kɔfɛ.",
-    aiFrenchText:
-      "Fais-lui boire beaucoup d'eau, rafraîchis-le avec des linges humides, et emmène-le au dispensaire si la fièvre persiste plus de deux jours.",
-    ttsLangHint: "fr-FR",
-  },
-  {
-    id: "peul-agri",
-    persona: {
-      name: "Oumar",
-      role: "Éleveur & agriculteur",
-      location: "Dori, Burkina Faso",
-      initials: "OB",
-    },
-    languageCode: "ff",
-    languageLabel: "Peul (Fulfulde)",
-    sector: "Agriculture pluviale",
-    userLocalText:
-      "Mi yiɗi rimndude gawri e ngesa am, ndeen kadi mi jaɓɓoo toɓo?",
-    userFrenchText:
-      "Je veux semer du mil dans mon champ, dois-je encore attendre la pluie ?",
-    aiLocalText:
-      "Ndiyam ngam remuru gawri maa : rem e balɗe tati garooje, ndeen ɓaawo lewru, sabu toɓo ina jokka e diiwaan maa.",
-    aiFrenchText:
-      "Pour ton champ de mil : sème dans les trois prochains jours, avant la fin du mois. Les pluies continuent régulièrement dans ta région.",
-    ttsLangHint: "fr-FR",
-  },
   {
     id: "moore-finance",
     persona: {
@@ -124,6 +69,69 @@ export const DEMO_TURNS: DemoTurn[] = [
       "Yãmb tõe n paama ligd bilfu tɛka mobile money wã pʋgẽ. Yãmb sã n dat, m na n wilg-y-la sore fãa, tɩ y kõ dokman ba yembre.",
     aiFrenchText:
       "Oui Salif : vous pouvez obtenir un microcrédit directement depuis votre mobile money, sans aucun document papier. Si vous voulez, je vous guide étape par étape.",
+    ttsLangHint: "fr-FR",
+  },
+  {
+    id: "moore-agriculture",
+    persona: {
+      name: "Rasmane",
+      role: "Cultivateur de mil",
+      location: "Koudougou, Burkina Faso",
+      initials: "RK",
+    },
+    languageCode: "mos",
+    languageLabel: "Mooré",
+    sector: "Agriculture pluviale",
+    userLocalText:
+      "Mam sã n dat n bʋd m ka-yood m pʋʋgẽ wã, wakat bʋg n zems n bʋd?",
+    userFrenchText:
+      "Je veux semer mon sorgho dans mon champ, quel est le meilleur moment pour le faire ?",
+    aiLocalText:
+      "Rasmane, saag na n niig raar a tãabo pʋgẽ. Bʋd f ka-yood beoogo bɩ vugri, tɩ tẽng-koomã paam n sɩɩse.",
+    aiFrenchText:
+      "Rasmane, la pluie arrivera dans les trois prochains jours. Sème ton sorgho demain ou après-demain, afin que le sol garde bien l'humidité.",
+    ttsLangHint: "fr-FR",
+  },
+  {
+    id: "moore-sante",
+    persona: {
+      name: "Awa",
+      role: "Mère de famille",
+      location: "Kaya, Burkina Faso",
+      initials: "AK",
+    },
+    languageCode: "mos",
+    languageLabel: "Mooré",
+    sector: "Santé maternelle",
+    userLocalText:
+      "M biig tara wʋgd zaame, m maa wãn?",
+    userFrenchText:
+      "Mon enfant a de la fièvre depuis hier soir, que dois-je faire ?",
+    aiLocalText:
+      "Awa, kõ f biigã koom wʋsg, la f ling-a ne peend sẽn tar koom. Wʋgdã sã n paas rasem a yiibu, tall-a n kẽng laafi-yiri.",
+    aiFrenchText:
+      "Awa, donne beaucoup d'eau à ton enfant et rafraîchis-le avec un linge humide. Si la fièvre dure plus de deux jours, emmène-le au centre de santé.",
+    ttsLangHint: "fr-FR",
+  },
+  {
+    id: "moore-education",
+    persona: {
+      name: "Fatimata",
+      role: "Commerçante",
+      location: "Bobo-Dioulasso, Burkina Faso",
+      initials: "FB",
+    },
+    languageCode: "mos",
+    languageLabel: "Mooré",
+    sector: "Éducation & administration",
+    userLocalText:
+      "Mam datame n kẽes m biig lekoolẽ, m sã n dɩk sɛb-bʋs la m rat n tʋme?",
+    userFrenchText:
+      "Je veux inscrire mon enfant à l'école, quels documents dois-je préparer ?",
+    aiLocalText:
+      "Fatimata, y rat-a-la biigã dogem sebre, yãmb meng kartã, la biigã laafi sebre. Yãmb tõe n paam-b-la mairie wã pʋgẽ, zaalem.",
+    aiFrenchText:
+      "Fatimata, il vous faut l'acte de naissance de l'enfant, votre carte d'identité et son carnet de santé. Vous pouvez les obtenir gratuitement à la mairie de votre commune.",
     ttsLangHint: "fr-FR",
   },
 ];

@@ -256,7 +256,7 @@ export default function VoiceInterface() {
   const activeMicTurn = played.find((p) => p.phase === "user-listening");
 
   return (
-    <div className="glass mx-auto flex flex-col gap-6 rounded-3xl px-4 py-6 sm:px-6 sm:py-8">
+    <div className="glass mx-auto flex flex-col gap-5 rounded-3xl px-3 py-5 sm:gap-6 sm:px-6 sm:py-8">
       {/* ==================================================== */}
       {/*  BARRE DE CONTRÔLE                                    */}
       {/* ==================================================== */}
@@ -280,8 +280,8 @@ export default function VoiceInterface() {
       {/*  ZONE MICRO                                           */}
       {/* ==================================================== */}
       {state === "playing" && activeMicTurn && (
-        <div className="flex flex-col items-center gap-2 rounded-2xl border border-sky-400/20 bg-sky-400/[0.03] px-4 py-4 animate-fade-in-up">
-          <div className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-200/90">
+        <div className="flex flex-col items-center gap-2 rounded-2xl border border-sky-400/20 bg-sky-400/[0.03] px-3 py-3 animate-fade-in-up sm:px-4 sm:py-4">
+          <div className="flex items-center gap-2 text-center text-[10px] font-semibold uppercase tracking-[0.12em] text-sky-200/90 sm:text-[11px] sm:tracking-[0.14em]">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-300 opacity-80" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-sky-300" />
@@ -291,7 +291,7 @@ export default function VoiceInterface() {
               {activeMicTurn.turn.languageLabel}
             </span>
           </div>
-          <Waveform active bars={28} />
+          <Waveform active bars={24} />
         </div>
       )}
 
@@ -301,7 +301,7 @@ export default function VoiceInterface() {
       {played.length > 0 && (
         <div
           ref={scrollRef}
-          className="max-h-[520px] space-y-6 overflow-y-auto pr-1"
+          className="max-h-[60vh] space-y-4 overflow-y-auto pr-1 sm:max-h-[520px] sm:space-y-6"
           aria-label="Historique de la conversation"
         >
           {played.map(({ turn, phase }) => (
@@ -390,8 +390,8 @@ function ControlBar({
             Démarrage auto dans {autostartLeft} s · annuler
           </button>
         ) : (
-          <p className="text-[11px] uppercase tracking-[0.16em] text-slate-400">
-            4 langues · 4 secteurs · ~1 minute
+          <p className="text-[10px] uppercase tracking-[0.14em] text-slate-400 sm:text-[11px] sm:tracking-[0.16em]">
+            4 scénarios Mooré · 4 secteurs · ~1 minute
           </p>
         )}
       </div>
@@ -440,8 +440,8 @@ function ControlBar({
 
   return (
     <div className="flex flex-col items-center gap-3 text-center">
-      <div className="rounded-full bg-sky-400/10 px-3.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-200 ring-1 ring-inset ring-sky-400/25">
-        Démonstration terminée · 4 langues restituées
+      <div className="rounded-full bg-sky-400/10 px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-sky-200 ring-1 ring-inset ring-sky-400/25 sm:text-[11px] sm:tracking-[0.14em]">
+        Démonstration terminée · 4 scénarios Mooré restitués
       </div>
       <button
         type="button"

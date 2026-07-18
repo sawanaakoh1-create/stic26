@@ -15,25 +15,25 @@ interface Stat {
 
 const STATS: Stat[] = [
   {
-    value: 60,
+    value: 8,
+    suffix: " M",
+    eyebrow: "Locuteurs Mooré",
+    caption:
+      "utilisent le Mooré au quotidien au Burkina Faso — majoritairement exclus des interfaces numériques textuelles.",
+  },
+  {
+    value: 65,
     suffix: " %",
     eyebrow: "Analphabétisme",
     caption:
-      "de la population adulte en Afrique de l'Ouest ne sait ni lire ni écrire — donc exclue des interfaces textuelles.",
-  },
-  {
-    value: 300,
-    suffix: " M",
-    eyebrow: "Locuteurs",
-    caption:
-      "de langues ouest-africaines (Wolof, Bambara, Peul, Mooré, Haoussa…) sans accès natif au numérique.",
+      "des adultes burkinabé ne lisent pas couramment le français — la voix devient donc la seule interface véritablement inclusive.",
   },
   {
     value: 4,
     suffix: "",
-    eyebrow: "Langues couvertes",
+    eyebrow: "Secteurs démontrés",
     caption:
-      "par le MVP AfriVoice AI dès le prototype — extensibles à 20+ langues avec le backend FastAPI.",
+      "agriculture, santé, finance, éducation — quatre cas d'usage Mooré joués en direct dans ce prototype MVP.",
   },
 ];
 
@@ -46,26 +46,25 @@ export default function ImpactStats() {
   return (
     <section
       aria-label="Impact potentiel"
-      className="mx-auto w-full max-w-6xl px-5 py-16"
+      className="mx-auto w-full max-w-6xl px-5 py-12 sm:py-16"
     >
-      <div className="mb-8 flex flex-col items-center text-center">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sky-300/90">
+      <div className="mb-6 flex flex-col items-center text-center sm:mb-8">
+        <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-sky-300/90 sm:text-[11px] sm:tracking-[0.18em]">
           Impact
         </p>
-        <h2 className="mt-2 max-w-2xl text-2xl font-semibold tracking-tight text-slate-100 sm:text-3xl">
-          Un continent, trois chiffres, une urgence.
+        <h2 className="mt-2 max-w-2xl text-xl font-semibold tracking-tight text-slate-100 sm:text-3xl">
+          Un pays, une langue, une urgence.
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-6">
         {STATS.map((stat) => (
           <StatCard key={stat.eyebrow} stat={stat} />
         ))}
       </div>
 
       <p className="mt-6 text-center text-[11px] text-slate-500">
-        Sources : UNESCO Institute for Statistics, Ethnologue, GSMA Mobile
-        Economy West Africa.
+        Sources : UNESCO Institute for Statistics, Ethnologue, INSD Burkina Faso.
       </p>
     </section>
   );
@@ -102,16 +101,16 @@ function StatCard({ stat }: { stat: Stat }) {
   return (
     <div
       ref={cardRef}
-      className="glass rounded-2xl p-5 sm:p-6 transition hover:border-sky-400/40"
+      className="glass rounded-2xl p-4 sm:p-6 transition hover:border-sky-400/40"
     >
-      <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-sky-300/80">
+      <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-sky-300/80 sm:text-[11px] sm:tracking-[0.16em]">
         {stat.eyebrow}
       </p>
-      <p className="mt-2 text-4xl font-semibold tracking-tight text-slate-50 sm:text-5xl">
+      <p className="mt-1.5 text-3xl font-semibold tracking-tight text-slate-50 sm:mt-2 sm:text-5xl">
         <span className="text-gradient">{displayed}</span>
         <span className="text-slate-100">{stat.suffix}</span>
       </p>
-      <p className="mt-3 text-sm leading-relaxed text-slate-200/80">
+      <p className="mt-2 text-[13px] leading-relaxed text-slate-200/80 sm:mt-3 sm:text-sm">
         {stat.caption}
       </p>
     </div>

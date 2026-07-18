@@ -5,11 +5,30 @@
 :root {
   --background: #0d0705;
   --foreground: #f6ede1;
+  /* Safe-area iOS/Android — respectent les encoches et la barre de gestes */
+  --safe-top: env(safe-area-inset-top);
+  --safe-right: env(safe-area-inset-right);
+  --safe-bottom: env(safe-area-inset-bottom);
+  --safe-left: env(safe-area-inset-left);
 }
 
 html,
 body {
   height: 100%;
+}
+
+/* Empêche le débordement horizontal sur mobile (waveform, bulles longues) */
+body {
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+}
+
+/* Améliore la zone tactile de tous les boutons sur mobile */
+@media (pointer: coarse) {
+  button,
+  a[role="button"] {
+    min-height: 44px;
+  }
 }
 
 body {

@@ -35,12 +35,12 @@ export default function Header() {
               AfriVoice <span className="text-sky-300">AI</span>
             </p>
             <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400 sm:text-[11px]">
-              Voice-first · Afrique de l&apos;Ouest
+              Voice-first · Mooré · Burkina Faso
             </p>
           </div>
         </Link>
 
-        <span className="hidden items-center gap-2 rounded-full border border-sky-400/40 bg-sky-400/10 px-3.5 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-sky-100 sm:inline-flex">
+        <span className="inline-flex items-center gap-1.5 rounded-full border border-sky-400/40 bg-sky-400/10 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.14em] text-sky-100 sm:gap-2 sm:px-3.5 sm:py-1.5 sm:text-xs sm:tracking-[0.18em]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -49,7 +49,7 @@ export default function Header() {
             strokeWidth="2.2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="h-3.5 w-3.5"
+            className="h-3 w-3 sm:h-3.5 sm:w-3.5"
             aria-hidden
           >
             <circle cx="12" cy="8" r="6" />

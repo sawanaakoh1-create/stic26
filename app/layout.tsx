@@ -15,47 +15,47 @@ export const metadata: Metadata = {
         ? `https://${process.env.VERCEL_URL}`
         : "http://localhost:3000")
   ),
-  title: "AfriVoice AI — Votre voix, votre monde numérique",
+  title: "AfriVoice AI — Parlez Mooré, entrez dans le numérique",
   description:
-    "AfriVoice AI est une infrastructure linguistique d'IA générative qui permet aux populations d'Afrique de l'Ouest d'interagir avec le numérique dans leurs langues locales.",
+    "AfriVoice AI est une infrastructure d'IA vocale voice-first. MVP STIC'26 focalisé sur le Mooré (8 M de locuteurs, Burkina Faso) : agriculture, santé, finance, éducation.",
   keywords: [
     "AfriVoice AI",
     "STIC 2026",
     "IA vocale",
     "inclusion numérique",
     "langues africaines",
+    "Mooré",
+    "Burkina Faso",
     "ASR",
     "TTS",
     "NLP",
-    "Wolof",
-    "Bambara",
-    "Peul",
-    "Mooré",
+    "voice-first",
   ],
   authors: [{ name: "AKOH N'DJARMA M. Sawanatou" }],
   creator: "AKOH N'DJARMA M. Sawanatou",
   openGraph: {
-    title: "AfriVoice AI — Votre voix, votre monde numérique",
+    title: "AfriVoice AI — Parlez Mooré, entrez dans le numérique",
     description:
-      "Assistant vocal IA pour l'inclusion numérique en Afrique de l'Ouest. Wolof · Bambara · Peul · Mooré.",
+      "MVP STIC'26 : assistant vocal IA en Mooré pour l'inclusion numérique au Burkina Faso.",
     type: "website",
     locale: "fr_FR",
     siteName: "AfriVoice AI",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AfriVoice AI — Votre voix, votre monde numérique",
+    title: "AfriVoice AI — Parlez Mooré, entrez dans le numérique",
     description:
-      "Assistant vocal IA pour l'inclusion numérique en Afrique de l'Ouest.",
+      "MVP STIC'26 : assistant vocal IA en Mooré pour l'inclusion numérique au Burkina Faso.",
     creator: "@afrivoiceai",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0b2545",
+  themeColor: "#0d0705",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({

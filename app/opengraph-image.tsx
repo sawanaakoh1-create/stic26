@@ -4,7 +4,7 @@ import { ImageResponse } from "next/og";
 // aperçus WhatsApp / LinkedIn / Twitter lorsqu'on partage le lien Vercel.
 // Aucune image binaire à uploader — Next.js la produit à la volée.
 export const runtime = "edge";
-export const alt = "AfriVoice AI — Votre voix, votre monde numérique";
+export const alt = "AfriVoice AI — Parlez Mooré, entrez dans le numérique";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -56,7 +56,7 @@ export default async function Image() {
                 color: "#c5b7a6",
               }}
             >
-              Voice-first · Afrique de l&apos;Ouest
+              Voice-first · Mooré · Burkina Faso
             </span>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default async function Image() {
               fontWeight: 600,
             }}
           >
-            Candidature STIC&apos;26 · Prototype MVP
+            STIC&apos;26 · MVP Phase 1 · Mooré
           </div>
 
           <div
@@ -90,7 +90,7 @@ export default async function Image() {
               flexDirection: "column",
             }}
           >
-            <span>Votre voix,</span>
+            <span>Parlez Mooré,</span>
             <span
               style={{
                 background:
@@ -99,7 +99,7 @@ export default async function Image() {
                 color: "transparent",
               }}
             >
-              votre monde numérique.
+              entrez dans le numérique.
             </span>
           </div>
 
@@ -111,9 +111,9 @@ export default async function Image() {
               maxWidth: 900,
             }}
           >
-            Une infrastructure d&apos;IA vocale pour l&apos;Afrique de
-            l&apos;Ouest. Parlez dans votre langue — l&apos;IA écoute,
-            comprend et répond, à voix haute.
+            MVP STIC&apos;26 : un assistant vocal IA qui écoute le Mooré,
+            comprend l&apos;intention et répond à voix haute. Agriculture,
+            santé, finance, éducation — sans lecture, sans clavier.
           </div>
         </div>
 
@@ -129,7 +129,7 @@ export default async function Image() {
             textTransform: "uppercase",
           }}
         >
-          <span>Wolof · Bambara · Peul · Mooré</span>
+          <span>Mooré · Burkina Faso · 4 secteurs</span>
           <span>AKOH N&apos;DJARMA M. Sawanatou</span>
         </div>
       </div>

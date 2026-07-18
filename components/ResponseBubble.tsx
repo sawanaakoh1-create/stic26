@@ -43,9 +43,9 @@ export default function ResponseBubble({
       {/* ------------------------------------------------------------------ */}
       {/* BULLE UTILISATEUR (droite)                                          */}
       {/* ------------------------------------------------------------------ */}
-      <div className="flex items-end justify-end gap-2.5">
+      <div className="flex items-end justify-end gap-2 sm:gap-2.5">
         <article
-          className={`glass max-w-[85%] rounded-2xl rounded-br-md border-sky-400/25 bg-sky-400/[0.05] p-4 ${
+          className={`glass max-w-[calc(100%-2.75rem)] rounded-2xl rounded-br-md border-sky-400/25 bg-sky-400/[0.05] p-3.5 sm:max-w-[85%] sm:p-4 ${
             showUser ? "animate-fade-in-up" : "opacity-0"
           }`}
           aria-live="polite"
@@ -66,10 +66,10 @@ export default function ResponseBubble({
 
           {showUser ? (
             <>
-              <p className="mt-2.5 text-sm font-medium leading-relaxed text-slate-50 sm:text-[15px]">
+              <p className="mt-2.5 text-[13px] font-medium leading-relaxed text-slate-50 sm:text-[15px]">
                 « {turn.userLocalText} »
               </p>
-              <p className="mt-1 text-[12px] italic leading-relaxed text-slate-400">
+              <p className="mt-1 text-[11px] italic leading-relaxed text-slate-400 sm:text-[12px]">
                 {turn.userFrenchText}
               </p>
             </>
@@ -89,7 +89,7 @@ export default function ResponseBubble({
       {/* ------------------------------------------------------------------ */}
       {/* BULLE IA (gauche) — apparition différée                             */}
       {/* ------------------------------------------------------------------ */}
-      <div className="flex items-start gap-2.5">
+      <div className="flex items-start gap-2 sm:gap-2.5">
         <span
           aria-hidden
           className="grid h-9 w-9 flex-none place-items-center rounded-full bg-gradient-to-br from-sky-300 to-sky-500 text-navy-950 shadow-glow"
@@ -129,7 +129,7 @@ export default function ResponseBubble({
 
         {showAi && (
           <article
-            className="glass max-w-[90%] animate-fade-in-up rounded-2xl rounded-tl-md p-4 shadow-glow"
+            className="glass max-w-[calc(100%-2.75rem)] animate-fade-in-up rounded-2xl rounded-tl-md p-3.5 shadow-glow sm:max-w-[90%] sm:p-4"
             aria-live="polite"
           >
             <header className="flex flex-wrap items-center justify-between gap-3">
@@ -185,7 +185,7 @@ export default function ResponseBubble({
               <p className="text-[10px] font-semibold uppercase tracking-wider text-sky-300/80">
                 Réponse vocale · {turn.languageLabel}
               </p>
-              <p className="mt-1.5 text-[15px] font-medium leading-relaxed text-slate-50 sm:text-base">
+              <p className="mt-1.5 text-[14px] font-medium leading-relaxed text-slate-50 sm:text-base">
                 « {turn.aiLocalText} »
               </p>
             </div>
@@ -195,7 +195,7 @@ export default function ResponseBubble({
               <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
                 Traduction française
               </p>
-              <p className="mt-1.5 text-[13px] leading-relaxed sm:text-sm">
+              <p className="mt-1.5 text-[12.5px] leading-relaxed sm:text-sm">
                 <KaraokeText
                   text={turn.aiFrenchText}
                   spokenCharIndex={isSpeaking ? spokenCharIndex : -1}
