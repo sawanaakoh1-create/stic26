@@ -15,17 +15,21 @@ export const metadata: Metadata = {
         ? `https://${process.env.VERCEL_URL}`
         : "http://localhost:3000")
   ),
-  title: "AfriVoice AI — Parlez Mooré, entrez dans le numérique",
+  title: "AfriVoice AI — Parlez votre langue, entrez dans le numérique",
   description:
-    "AfriVoice AI est une infrastructure d'IA vocale voice-first. MVP STIC'26 focalisé sur le Mooré (8 M de locuteurs, Burkina Faso) : agriculture, santé, finance, éducation.",
+    "AfriVoice AI : vision d'une infrastructure d'IA vocale voice-first pour l'Afrique de l'Ouest. Prototype STIC'26 démontrant l'expérience utilisateur cible sur les langues locales — santé, agriculture, finance, éducation.",
   keywords: [
     "AfriVoice AI",
     "STIC 2026",
     "IA vocale",
     "inclusion numérique",
     "langues africaines",
+    "Afrique de l'Ouest",
     "Mooré",
-    "Burkina Faso",
+    "Dioula",
+    "Wolof",
+    "Bambara",
+    "Fulfuldé",
     "ASR",
     "TTS",
     "NLP",
@@ -34,18 +38,18 @@ export const metadata: Metadata = {
   authors: [{ name: "AKOH N'DJARMA M. Sawanatou" }],
   creator: "AKOH N'DJARMA M. Sawanatou",
   openGraph: {
-    title: "AfriVoice AI — Parlez Mooré, entrez dans le numérique",
+    title: "AfriVoice AI — Parlez votre langue, entrez dans le numérique",
     description:
-      "MVP STIC'26 : assistant vocal IA en Mooré pour l'inclusion numérique au Burkina Faso.",
+      "Prototype de vision STIC'26 : assistant vocal IA pour l'inclusion numérique en Afrique de l'Ouest.",
     type: "website",
     locale: "fr_FR",
     siteName: "AfriVoice AI",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AfriVoice AI — Parlez Mooré, entrez dans le numérique",
+    title: "AfriVoice AI — Parlez votre langue, entrez dans le numérique",
     description:
-      "MVP STIC'26 : assistant vocal IA en Mooré pour l'inclusion numérique au Burkina Faso.",
+      "Prototype de vision STIC'26 : assistant vocal IA pour l'inclusion numérique en Afrique de l'Ouest.",
     creator: "@afrivoiceai",
   },
 };

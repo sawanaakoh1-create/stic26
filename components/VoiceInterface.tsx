@@ -324,11 +324,13 @@ function ScenarioMenu({ onSelect }: ScenarioMenuProps) {
           Choisissez un scénario
         </p>
         <h3 className="mt-1.5 text-base font-semibold text-slate-100 sm:text-lg">
-          4 cas d&apos;usage Mooré · 3 échanges chacun
+          4 cas d&apos;usage · 3 échanges chacun
         </h3>
         <p className="mt-1 max-w-md text-[12px] leading-relaxed text-slate-400 sm:text-[13px]">
-          Chaque scénario se joue en ~30 s. Le persona pose 3 questions, l&apos;IA
-          répond à voix haute en Mooré.
+          Chaque scénario se joue en ~30 s. Le persona pose 3 questions,
+          l&apos;IA répond à voix haute. Échantillons illustratifs en Mooré —
+          la langue pilote finale sera arrêtée avec l&apos;expert linguistique
+          à recruter.
         </p>
       </div>
 

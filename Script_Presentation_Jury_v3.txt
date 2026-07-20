@@ -1,0 +1,546 @@
+================================================================================
+              SCRIPT DE PRÉSENTATION — AfriVoice AI  (VERSION 3 — FINALE)
+              STIC'26 · Sahel Tech Innovation Challenge 2026
+              FINALE EN LIGNE · Durée cible : 10 minutes STRICTES
+              Support : AfriVoice_AI_Pitch_STIC26_v3.pptx  (11 slides)
+              Démo (vision) : https://stic26.vercel.app
+================================================================================
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  CONTEXTE (à garder en tête, à NE PAS lire)                                  │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  · Le concours STIC'26 est organisé par le Burkina Faso.                     │
+│  · Je suis togolaise, seule fondatrice, et l'unique porteuse aujourd'hui.    │
+│  · Je présente en visioconférence depuis Lomé.                               │
+│  · Dans la fiche de candidature, AUCUNE langue de démarrage n'est fixée :    │
+│    j'y écris seulement « une première langue locale majeure d'Afrique de     │
+│    l'Ouest ». Le choix définitif se fera avec l'expert linguistique          │
+│    à recruter (profil listé dans la fiche, section « Équipe »).              │
+│  · Ce qui est en ligne sur https://stic26.vercel.app est un PROTOTYPE DE     │
+│    VISION — un aperçu conçu par moi seule pour rendre l'idée tangible.       │
+│    La réalisation industrielle exige les 3 profils experts de la fiche :     │
+│    CTO, Expert linguistique & Data Manager, Responsable Produit & Commercial.│
+│  · Contrainte matérielle honnête : mon poste de travail actuel a peu de RAM. │
+│    Je n'ai donc pas pu entraîner de modèles lourds ici — j'ai construit une  │
+│    démo légère qui MONTRE la vision et prouve l'expérience utilisateur.      │
+│    C'est précisément ce que le financement STIC'26 doit débloquer.           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  MODE D'EMPLOI                                                               │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  · Chaque slide a un texte à dire MOT PAR MOT (colonne "TEXTE À DIRE").      │
+│  · Les indications entre [crochets] sont des CUES techniques.                │
+│  · Objectif : ~55 secondes par slide en moyenne, 10 min au TOTAL.            │
+│  · Je répète le script à voix haute au moins 3 fois avant le jour J.         │
+│  · En visio : je regarde la CAMÉRA, pas l'écran. Sourire dès le début.       │
+│  · Je parle LENTEMENT. Je respire entre chaque phrase.                       │
+│  · Le son de la démo passe par le partage d'écran — je coche "partager le    │
+│    son de l'ordinateur" dans la visio AVANT de démarrer.                     │
+│  · MOTS À ÉVITER : « ça ne marche pas », « c'est juste un mockup »,          │
+│    « bug », « désolée ». MOTS À PRÉFÉRER : « prototype de vision »,          │
+│    « preuve de concept », « aperçu de l'expérience cible ».                  │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                            AVANT DE PRENDRE LA PAROLE
+═══════════════════════════════════════════════════════════════════════════════
+
+[Micro et caméra allumés. Éclairage vérifié. Fond neutre.]
+[Test audio fait 10 min avant. Écouteurs branchés pour éviter l'écho.]
+[Partage d'écran prêt : PPTX en mode Présentateur + onglet stic26.vercel.app.]
+[Fermer toutes les autres applis pour économiser la RAM. Un seul onglet actif.]
+[Respirer profondément 3 fois. Sourire. Regarder la caméra.]
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  SLIDE 1 — COUVERTURE : AfriVoice AI · Voice-first · Vision Afrique de l'Ouest
+                                                                    (~45 sec)
+═══════════════════════════════════════════════════════════════════════════════
+
+TEXTE À DIRE :
+
+« Bonsoir Mesdames et Messieurs les membres du jury.
+
+Je m'appelle AKOH N'DJARMA M. Sawanatou. Je vous salue depuis Lomé, au
+Togo, et je suis honorée d'être finaliste de STIC'26 — le Sahel Tech
+Innovation Challenge, porté par le Burkina Faso.
+
+Je porte seule la vision de ce projet aujourd'hui, et je vous la
+présente : AfriVoice AI.
+
+AfriVoice AI, c'est une infrastructure linguistique d'IA générative
+voice-first : elle écoute une langue locale d'Afrique de l'Ouest,
+comprend, et répond à voix haute.
+
+Une seule promesse : rendre le numérique accessible à ceux qui ne
+savent ni lire, ni écrire. Simplement en leur parlant leur langue. »
+
+[Pause 2 secondes. Regarder la caméra. Slide 2.]
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  SLIDE 2 — LE PROBLÈME : la barrière invisible du numérique
+                                                                    (~50 sec)
+═══════════════════════════════════════════════════════════════════════════════
+
+TEXTE À DIRE :
+
+« L'Afrique de l'Ouest partage un défi commun, du Burkina au Togo,
+du Mali au Sénégal : l'exclusion numérique par l'écrit.
+
+Plus de 60 % des adultes de la sous-région utilisent quotidiennement
+une langue locale, mais font face à un univers numérique
+exclusivement francophone ou anglophone.
+
+Au Burkina Faso, presque deux personnes sur trois — 65 % de la
+population — ne savent pas lire couramment le français.
+
+Ces personnes ont pourtant un téléphone. Elles ont besoin de santé,
+de conseils agricoles, de services financiers, d'éducation. Mais
+toutes les applications, tous les sites, toutes les IA du monde leur
+parlent en français, à l'écrit.
+
+Pour elles, le numérique est un mur. C'est ce mur que nous voulons
+faire tomber. »
+
+[Slide 3.]
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  SLIDE 3 — L'HISTOIRE D'AWA
+                                                             (~55 sec — émotion)
+═══════════════════════════════════════════════════════════════════════════════
+
+TEXTE À DIRE :
+
+« Laissez-moi vous parler d'Awa.
+
+Awa a 42 ans. Elle vit dans une commune rurale, à deux heures de la
+capitale. Elle est mère de quatre enfants. Elle ne sait pas lire.
+
+Un matin, son plus jeune fils a de la fièvre. Elle veut savoir quoi
+faire. Elle prend son téléphone. Elle appuie sur des icônes qu'elle
+ne comprend pas. Elle abandonne.
+
+Awa, ce n'est pas une exception. C'est une réalité à des millions
+d'exemplaires, du Sahel au golfe de Guinée.
+
+Avec AfriVoice AI, Awa prend son téléphone, appuie sur un seul bouton,
+et dit simplement, dans sa langue : "Mon enfant a de la fièvre,
+qu'est-ce que je dois faire ?"
+
+Et l'assistant lui répond. À voix haute. Dans sa langue.
+
+Voilà pourquoi je porte AfriVoice AI. »
+
+[Pause 3 secondes. Slide 4.]
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  SLIDE 4 — LA SOLUTION : ASR + NLP + TTS
+                                                                    (~45 sec)
+═══════════════════════════════════════════════════════════════════════════════
+
+TEXTE À DIRE :
+
+« AfriVoice AI, c'est trois briques d'intelligence artificielle,
+orchestrées pour une seule interface humaine : la voix.
+
+Un — l'ASR, la reconnaissance vocale, qui transforme la parole locale
+en texte.
+
+Deux — le NLP, le traitement du langage, qui comprend l'intention et
+formule la réponse la plus utile.
+
+Trois — le TTS, la synthèse vocale, qui prononce la réponse à voix
+haute, avec une voix naturelle.
+
+L'objectif cible mesuré sur le prototype : une latence bout en bout
+sous les trois secondes, sur des téléphones d'entrée de gamme.
+
+L'utilisateur ne voit rien de tout cela. Il parle. Il écoute. C'est tout. »
+
+[Slide 5.]
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  SLIDE 5 — CHOIX DE LA LANGUE PILOTE : une décision experte
+                                                                    (~50 sec)
+═══════════════════════════════════════════════════════════════════════════════
+
+TEXTE À DIRE :
+
+« Une question honnête que le jury peut se poser : par quelle langue
+allons-nous commencer ?
+
+Ma fiche de candidature ne fixe volontairement pas cette langue.
+J'ai écrit "une première langue locale majeure d'Afrique de l'Ouest",
+et c'est un choix assumé.
+
+Pourquoi ? Parce que le choix de la langue pilote est une décision
+scientifique et culturelle, pas une décision de marketing. Elle sera
+arrêtée avec l'Expert Linguistique et Data Manager que je recruterai
+dès l'obtention du financement — c'est le deuxième profil listé
+dans mon équipe cible.
+
+Nous trancherons sur quatre critères objectifs : la disponibilité
+de corpus vocaux, le nombre de locuteurs, l'ancrage terrain des
+partenaires ONG et coopératives, et la stratégie régionale.
+
+Les candidates naturelles sont le Mooré, le Dioula, le Fulfuldé,
+le Wolof et le Bambara. Le prototype que je vous montre dans un
+instant illustre le concept avec des échantillons en Mooré — mais
+la décision finale appartient à l'expert. »
+
+[Slide 6 — c'est la démo.]
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  SLIDE 6 — DÉMO EN DIRECT : APERÇU DE LA VISION
+                                                        (~100 sec — POINT FORT)
+═══════════════════════════════════════════════════════════════════════════════
+
+TEXTE À DIRE :
+
+« Assez parlé. Je vous montre.
+
+Je précise d'abord un point important : ce que je vais partager avec
+vous n'est pas le produit final. C'est un PROTOTYPE DE VISION —
+un aperçu construit par moi seule pour rendre l'expérience tangible.
+
+Il est en ligne sur stic26.vercel.app. Je colle le lien dans le chat
+de la visio, tout de suite. »
+
+[Coller le lien https://stic26.vercel.app dans le chat de la visio.]
+[Basculer le partage d'écran vers l'onglet du navigateur.]
+[VÉRIFIER que "partager le son de l'ordinateur" est bien coché.]
+
+« Vous voyez quatre scénarios — santé, agriculture, finance, éducation —
+avec des personas typiques d'Afrique de l'Ouest. Chaque scénario joue
+trois échanges vocaux enchaînés, avec transcription en langue locale,
+traduction française, et lecture vocale.
+
+Je lance la santé. »
+
+[Cliquer sur le scénario "Santé".]
+[Laisser la démo se dérouler — 3 échanges, ~30 secondes.]
+[NE PAS PARLER pendant que la voix parle. Laisser le jury écouter.]
+
+« Vous venez d'entendre trois échanges avec une IA qui comprend et
+qui répond, sans clavier, sans écran à lire. Juste la voix.
+
+Ce que vous voyez est la preuve que le parcours utilisateur
+fonctionne de bout en bout. Ce qu'il reste à construire, avec les
+experts que je recruterai, c'est le modèle vocal industriel derrière
+cette interface.
+
+C'est cela, AfriVoice AI. »
+
+[Revenir au PPTX. Slide 7.]
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  SLIDE 7 — NOTRE INNOVATION
+                                                                    (~45 sec)
+═══════════════════════════════════════════════════════════════════════════════
+
+TEXTE À DIRE :
+
+« Ce qui rendra AfriVoice AI unique, c'est trois choses que ni Google,
+ni OpenAI, ni Meta ne font aujourd'hui sur les langues d'Afrique de
+l'Ouest à faible ressource numérique.
+
+Un — un corpus de données à collecter sur le terrain, avec des
+locuteurs natifs rémunérés, encadré par un expert linguistique.
+
+Deux — des modèles ASR et TTS fine-tunés spécifiquement pour ces
+langues à faible ressource, portés par un CTO senior spécialisé
+en Big Data et IA.
+
+Trois — une expérience utilisateur qui ne demande AUCUNE compétence
+numérique. On appuie, on parle, on écoute. Ce point-là, je l'ai
+déjà démontré aujourd'hui avec le prototype.
+
+Objectif : premier assistant vocal IA end-to-end sur une langue
+majeure d'Afrique de l'Ouest, avec une contextualisation culturelle
+que les modèles globaux ne savent pas faire. Un océan bleu. »
+
+[Slide 8.]
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  SLIDE 8 — MARCHÉ & MODÈLE ÉCONOMIQUE
+                                                                    (~55 sec)
+═══════════════════════════════════════════════════════════════════════════════
+
+TEXTE À DIRE :
+
+« Notre marché tient sur trois segments et trois flux de revenus,
+comme documenté dans ma fiche.
+
+B2C — les utilisateurs finaux : populations non alphabétisées,
+agriculteurs, micro-entrepreneurs. Modèle freemium : accès de base
+gratuit, options premium payantes.
+
+B2B — les entreprises : banques et microfinances pour l'inclusion
+financière, cliniques pour la e-santé, plateformes e-commerce.
+Nous leur vendons des licences API, facturées à l'appel ou au forfait.
+
+B2G et ONG — administrations, agences de santé, organisations
+humanitaires. Contrats-cadres pour des campagnes de sensibilisation
+vocales de masse.
+
+Trois segments, trois flux, un seul moteur technologique. »
+
+[Slide 9.]
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  SLIDE 9 — TRACTION & ROADMAP
+                                                                    (~55 sec)
+═══════════════════════════════════════════════════════════════════════════════
+
+TEXTE À DIRE :
+
+« Où en sommes-nous concrètement, aujourd'hui ?
+
+Un — la vision est claire, documentée, et présentée devant vous.
+Deux — un prototype fonctionnel est en ligne : celui que vous venez
+de tester. Il valide le parcours utilisateur voice-first.
+Trois — des indicateurs cibles ont été calibrés dans la fiche :
+précision ASR visée 95 %, latence cible sous trois secondes,
+premier groupe test de 50 utilisateurs à mobiliser.
+
+Feuille de route sur trois ans, telle qu'inscrite dans ma fiche :
+
+Année 1 — recrutement des trois profils clés, choix de la langue
+pilote avec l'expert linguistique, collecte de corpus, MVP
+industrialisé, cible 3 000 utilisateurs actifs.
+
+Année 2 — extension à une deuxième langue locale, premiers contrats
+B2B et B2G, cible 15 000 utilisateurs.
+
+Année 3 — troisième et quatrième langues, ouverture API publique,
+cible 50 000 utilisateurs.
+
+Côté finances : moins 20 000 dollars en année 1, point mort en
+année 2, plus 130 000 dollars en année 3. C'est la courbe en J
+classique d'une deep-tech à impact social. »
+
+[Slide 10.]
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  SLIDE 10 — ÉQUIPE & DEMANDE AU JURY (SLIDE CLÉ)
+                                                             (~60 sec — clé)
+═══════════════════════════════════════════════════════════════════════════════
+
+TEXTE À DIRE :
+
+« Voici le point le plus important de ma présentation.
+
+Aujourd'hui, ce projet, c'est moi. Seule. Fondatrice, développeuse,
+chercheuse terrain. J'ai conçu l'architecture, développé le
+prototype de vision que vous venez de tester, et rédigé la fiche.
+
+Mais je suis lucide, et ma fiche l'est aussi : un projet d'infrastructure
+IA de cette ampleur ne se réalise pas seule. Trois profils experts
+sont explicitement listés dans ma fiche, à recruter dès le financement
+obtenu :
+
+Un — un CTO, Ingénieur DevOps et Infrastructures Big Data,
+pour industrialiser le déploiement des modèles à grande échelle
+et sécuriser les données.
+
+Deux — un Expert Linguistique et Data Manager, spécialiste des
+langues ouest-africaines, pour collecter, structurer et valider
+éthiquement les corpus vocaux — et pour arrêter la langue pilote.
+
+Trois — un Responsable Produit et Commercial, profil Business
+Development, pour l'acquisition des clients B2B et B2G et
+l'optimisation continue de l'UX vocale.
+
+Ce que je vous demande, ce n'est pas seulement de financer une idée.
+C'est de financer la CONSTITUTION d'une équipe capable de la réaliser.
+
+Quatre demandes concrètes au jury :
+
+Un — un financement d'amorçage pour l'infrastructure serveur et
+le fine-tuning des modèles.
+
+Deux — un budget de recrutement pour les trois profils experts.
+
+Trois — un appui à la collecte de corpus vocaux à grande échelle,
+avec des locuteurs natifs rémunérés.
+
+Quatre — des partenariats de terrain : ONG santé, coopératives
+agricoles, mairies, opérateurs télécom.
+
+Votre soutien ne finance pas juste une startup. Il finance l'entrée
+de millions de personnes non alphabétisées dans l'ère numérique. »
+
+[Slide 11.]
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  SLIDE 11 — VISION & MERCI
+                                                        (~45 sec — clôture)
+═══════════════════════════════════════════════════════════════════════════════
+
+TEXTE À DIRE :
+
+« Ma vision, c'est un continent où plus jamais un paysan, une mère,
+un artisan ne sera exclu du numérique parce qu'il ne sait pas lire.
+
+Un continent où l'intelligence artificielle parle nos langues,
+comprend nos réalités, et sert nos vies.
+
+AfriVoice AI, ce n'est pas encore une application finie. C'est une
+vision documentée, un prototype en ligne, et une fondatrice prête
+à s'entourer des meilleurs pour la réaliser.
+
+C'est un pont — entre la parole ancestrale et l'intelligence de
+demain. Un pont que je commence à bâtir depuis Lomé, pour toute
+l'Afrique de l'Ouest.
+
+Je vous remercie du fond du cœur pour votre attention.
+
+Le lien du prototype est dans le chat, et le QR code à l'écran.
+Testez-le depuis vos appareils.
+
+Je reste à votre disposition pour toutes vos questions. Merci. »
+
+[Sourire. Regarder la caméra. Ne pas couper le partage. Attendre les questions.]
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                        TIMING RÉCAPITULATIF (10 min = 600 s)
+═══════════════════════════════════════════════════════════════════════════════
+
+  Slide  1  Couverture ................................. 45 s
+  Slide  2  Problème ................................... 50 s
+  Slide  3  Awa ........................................ 55 s
+  Slide  4  Solution ................................... 45 s
+  Slide  5  Choix de la langue pilote .................. 50 s
+  Slide  6  Démo live (aperçu vision) ................. 100 s
+  Slide  7  Innovation ................................. 45 s
+  Slide  8  Marché & BM ................................ 55 s
+  Slide  9  Traction & Roadmap ......................... 55 s
+  Slide 10  Équipe & Ask ............................... 60 s
+  Slide 11  Vision & Merci ............................. 45 s
+                                                       ──────
+                                        TOTAL     ≈  605 s  ≈  10 min
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                        PRÉPARATION AUX QUESTIONS DU JURY
+═══════════════════════════════════════════════════════════════════════════════
+
+Q : « Le prototype est joli, mais il n'y a pas de vraie IA derrière —
+     ce sont des réponses pré-enregistrées. Que répondez-vous ? »
+R : « Vous avez raison, et je l'assume ouvertement : le site en ligne
+     est un PROTOTYPE DE VISION. Son rôle est de démontrer que le
+     parcours utilisateur voice-first fonctionne, pas d'exécuter les
+     modèles finaux. Construire les modèles ASR et TTS de production
+     exige un CTO senior, un expert linguistique, une infrastructure
+     GPU, et un corpus terrain — c'est précisément ce que je viens
+     demander à STIC'26 de financer. Ce que le prototype prouve
+     aujourd'hui, c'est la faisabilité de l'expérience et la clarté
+     de la vision. »
+
+Q : « Pourquoi la fiche ne fixe-t-elle pas la langue de démarrage ? »
+R : « C'est un choix méthodologique. Fixer la langue avant d'avoir
+     recruté l'expert linguistique, ce serait mettre la charrue
+     avant les bœufs. Le choix se fera sur quatre critères objectifs :
+     disponibilité de corpus, nombre de locuteurs, ancrage des
+     partenaires terrain, stratégie régionale. Les candidates
+     naturelles sont le Mooré, le Dioula, le Fulfuldé, le Wolof et
+     le Bambara. »
+
+Q : « Vous êtes togolaise. Pourquoi ne pas commencer par une langue
+     du Togo ? »
+R : « Le choix appartiendra à l'expert. Mais je précise : STIC'26
+     est un concours porté par le Burkina Faso, et le prototype
+     illustre déjà le concept avec des échantillons en Mooré, par
+     respect pour le pays hôte. La roadmap année 3 prévoit
+     explicitement l'ouverture régionale, Togo inclus. »
+
+Q : « Comment protégez-vous les données personnelles vocales ? »
+R : « Toutes les données audio sont anonymisées à la capture. Nous
+     ne stockons ni identifiant utilisateur, ni voix brute. Seules
+     les transcriptions anonymes serviront à améliorer le modèle.
+     Le CTO à recruter aura pour mission explicite de garantir cette
+     conformité — c'est écrit dans son cahier des charges dans la
+     fiche. »
+
+Q : « Que faites-vous si Google ou OpenAI lancent un modèle sur les
+     langues ouest-africaines demain ? »
+R : « Notre avantage n'est pas seulement technologique. Il est
+     culturel et humain : corpus collecté sur le terrain, contextualisation
+     sectorielle, UX pensée pour les analphabètes, partenariats
+     locaux. Les géants font des modèles génériques. Nous faisons
+     des solutions ancrées. »
+
+Q : « Comment monétisez-vous auprès d'utilisateurs à faible revenu ? »
+R : « Nous ne monétisons pas d'abord auprès des utilisateurs finaux,
+     mais auprès des B2B et B2G qui veulent leur parler. Le service
+     reste gratuit ou très bas coût pour l'utilisateur final. »
+
+Q : « Vous êtes seule. N'est-ce pas un risque majeur ? »
+R : « C'est LE risque numéro un, et je ne le cache pas. C'est
+     exactement pour cela que ma fiche liste explicitement trois
+     recrutements prioritaires : CTO, expert linguistique, responsable
+     produit. Mon rôle aujourd'hui n'est pas de tout faire seule —
+     c'est de porter la vision, de démontrer sa faisabilité par un
+     prototype, et de rassembler autour de moi les experts qui vont
+     la réaliser. »
+
+Q : « Quel est le principal risque technique du projet ? »
+R : « Le passage à l'échelle du corpus vocal pour une langue à
+     faible ressource. Je le mitige par trois leviers : partenariats
+     universitaires, collecte crowdsourcée rémunérée sur le terrain,
+     et recrutement d'un expert linguistique dédié. »
+
+Q : « Pourquoi vous, et pas quelqu'un d'autre ? »
+R : « Parce que je vis le problème. Parce que je maîtrise la
+     technologie ET je comprends le contexte culturel ouest-africain.
+     Parce que j'ai eu la lucidité de construire un prototype seule
+     pour rendre la vision tangible AVANT de demander du financement.
+     Et parce que j'ai la lucidité de reconnaître que la suite exige
+     une équipe experte — pas un ego solo. »
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                        CHECKLIST JOUR J — PRÉSENTATION EN LIGNE
+═══════════════════════════════════════════════════════════════════════════════
+
+□ Tester https://stic26.vercel.app sur ma connexion 30 min avant.
+□ Prévoir une 2e connexion (partage 4G du téléphone) en secours.
+□ FERMER toutes les autres applis pour économiser la RAM (PC fragile).
+□ Un seul onglet navigateur : celui de la démo. Rien d'autre.
+□ Charger l'ordinateur à 100 % + brancher le secteur.
+□ Écouteurs branchés (évite l'écho / le larsen).
+□ Micro testé + volume système à 70 %.
+□ Caméra à hauteur des yeux · éclairage face au visage · fond neutre.
+□ PPTX v3 ouvert en mode Présentateur.
+□ Onglet stic26.vercel.app déjà chargé et prêt.
+□ Coche "Partager le son de l'ordinateur" activée AVANT la démo.
+□ Lien https://stic26.vercel.app copié dans le presse-papiers.
+□ Verre d'eau à côté. Toilettes faites.
+□ Respirer 3 fois. Sourire. Regarder la CAMÉRA, pas l'écran.
+□ Chronomètre discret à l'écran ou sur le téléphone.
+□ Terminer à 9 min 55, laisser 5 s de silence, puis "Merci".
+
+RAPPEL CLÉ POUR TOI :
+Tu n'as pas besoin d'un produit fini pour convaincre. Tu as besoin
+d'une vision claire, d'un prototype honnête, et d'une demande
+précise. Tu as les trois. Va montrer que tu es la bonne personne
+pour porter cette vision.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                                  BONNE CHANCE !
+                                  Depuis Lomé jusqu'à Ouaga — tu portes tout.
+═══════════════════════════════════════════════════════════════════════════════

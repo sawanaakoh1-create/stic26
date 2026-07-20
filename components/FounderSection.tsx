@@ -27,15 +27,19 @@ export default function FounderSection() {
               AKOH N&apos;DJARMA M. Sawanatou
             </h2>
             <p className="mt-1 text-[11px] uppercase tracking-[0.18em] text-sky-300/80">
-              Fondatrice · Lead développeuse IA
+              Fondatrice · Lead développeuse IA · Lomé, Togo
             </p>
             <p className="mt-3 text-[13px] leading-relaxed text-slate-200/85 sm:text-base">
-              Ingénieure passionnée par l&apos;inclusion numérique en Afrique
-              de l&apos;Ouest, je construis AfriVoice AI pour que parler sa
-              langue maternelle devienne un droit numérique. Ce MVP démarre
-              en <span className="font-semibold text-sky-200">Mooré</span>
-              &nbsp;— la langue de 8 millions de Burkinabé — avant l&apos;extension
-              multilingue portée par notre backend FastAPI.
+              Informaticienne passionnée par l&apos;inclusion numérique en
+              Afrique de l&apos;Ouest, je porte seule aujourd&apos;hui la vision
+              d&apos;AfriVoice AI : une infrastructure d&apos;IA vocale pour
+              les langues locales. J&apos;ai conçu l&apos;architecture,
+              développé ce prototype et rédigé la fiche de candidature
+              STIC&apos;26. La suite exige
+              <span className="font-semibold text-sky-200"> une équipe experte </span>
+              — CTO, expert linguistique et responsable produit — pour
+              industrialiser les modèles et finaliser le choix de la
+              langue pilote.
             </p>
 
             <div className="mt-4 flex flex-wrap items-center justify-center gap-2 sm:justify-start">
@@ -43,10 +47,10 @@ export default function FounderSection() {
                 Candidature STIC&apos;26
               </span>
               <span className="rounded-full bg-white/5 px-3 py-1 text-[10px] uppercase tracking-wider text-slate-300 sm:text-[11px]">
-                Mooré · NLP · TTS
+                Vision · Prototype · Recrutement
               </span>
               <span className="rounded-full bg-white/5 px-3 py-1 text-[10px] uppercase tracking-wider text-slate-300 sm:text-[11px]">
-                Burkina Faso
+                Afrique de l&apos;Ouest
               </span>
             </div>
           </div>

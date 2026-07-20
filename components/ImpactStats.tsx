@@ -15,11 +15,11 @@ interface Stat {
 
 const STATS: Stat[] = [
   {
-    value: 8,
-    suffix: " M",
-    eyebrow: "Locuteurs Mooré",
+    value: 60,
+    suffix: " %+",
+    eyebrow: "Langues locales",
     caption:
-      "utilisent le Mooré au quotidien au Burkina Faso — majoritairement exclus des interfaces numériques textuelles.",
+      "des adultes d'Afrique de l'Ouest utilisent quotidiennement une langue locale — mais font face à un numérique exclusivement francophone ou anglophone.",
   },
   {
     value: 65,
@@ -31,9 +31,9 @@ const STATS: Stat[] = [
   {
     value: 4,
     suffix: "",
-    eyebrow: "Secteurs démontrés",
+    eyebrow: "Scénarios démontrés",
     caption:
-      "agriculture, santé, finance, éducation — quatre cas d'usage Mooré joués en direct dans ce prototype MVP.",
+      "santé, agriculture, inclusion financière, éducation — quatre cas d'usage joués en direct dans ce prototype de vision.",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function ImpactStats() {
           Impact
         </p>
         <h2 className="mt-2 max-w-2xl text-xl font-semibold tracking-tight text-slate-100 sm:text-3xl">
-          Un pays, une langue, une urgence.
+          Une région, des langues, une urgence.
         </h2>
       </div>
 

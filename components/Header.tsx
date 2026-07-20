@@ -11,7 +11,8 @@ const NAV_LINKS: Array<{ href: string; label: string }> = [
   { href: "#demo", label: "Démo" },
   { href: "#architecture", label: "Architecture" },
   { href: "#impact", label: "Impact" },
-  { href: "#equipe", label: "Équipe" },
+  { href: "#equipe-cible", label: "Équipe cible" },
+  { href: "#equipe", label: "Fondatrice" },
 ];
 
 /**
@@ -74,7 +75,7 @@ export default function Header() {
               AfriVoice <span className="text-sky-300">AI</span>
             </p>
             <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400 sm:text-[11px]">
-              Voice-first · Mooré · Burkina Faso
+              Voice-first · Afrique de l&apos;Ouest · Prototype de vision
             </p>
           </div>
         </Link>
